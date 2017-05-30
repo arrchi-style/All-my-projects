@@ -1,0 +1,8 @@
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\bin\Release\20.04.17.exe.config
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\bin\Release\20.04.17.exe
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\bin\Release\20.04.17.pdb
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\obj\Release\_20._04._17.Form1.resources
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\obj\Release\_20._04._17.Properties.Resources.resources
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\obj\Release\20.04.17.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\obj\Release\20.04.17.exe
+C:\Users\Dunki\Desktop\20.04.17\20.04.17\obj\Release\20.04.17.pdb

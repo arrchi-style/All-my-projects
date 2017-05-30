@@ -1,0 +1,7 @@
+﻿  Time.cpp
+c:\users\dunki\desktop\проекти\classes\classes\time.cpp(36): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+c:\users\dunki\desktop\проекти\classes\classes\time.cpp(61): error C3867: 'Time::open': non-standard syntax; use '&' to create a pointer to member
+  main.cpp
+  Box.cpp
+c:\users\dunki\desktop\проекти\classes\classes\box.cpp(49): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
+  Generating Code...

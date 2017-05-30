@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Management_style_and_Resources">
+
+
+
+    <ControlTemplate x:Key="ButtonTemplate"
+                         TargetType="{x:Type Button}">
+        <!--створюємо стиль для кнопки-->
+        <Grid>
+            <Ellipse Height="40" Width="40"
+                         Fill="{TemplateBinding Background}"
+                         Stroke="{TemplateBinding BorderBrush}"/>
+            <ContentPresenter HorizontalAlignment="Center"
+                                  VerticalAlignment="Center"/>
+
+        </Grid>
+    </ControlTemplate>
+
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Template" Value="{StaticResource ButtonTemplate}"/>
+        <!--створення стилю для всіх кнопок по замовчуваню-->
+        <Setter Property="Background" 
+                    Value="Orange"/>
+        <Setter Property="BorderBrush" 
+                    Value="red"/>
+
+
+
+        <!--всі кнопки унаслідували ButtonTemplate стиль-->
+    </Style>
+
+
+
+
+
+
+
+
+
+
+
+</ResourceDictionary>

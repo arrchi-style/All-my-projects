@@ -1,0 +1,33 @@
+int	Time::timeToSeconds()
+{
+	int allSecond = second_, d;
+	d = hour_ * 60;
+	d += minute_;
+	allSecond += d * 60;
+	return allSecond;
+}
+char* Time::timeToStringFormat()
+{
+	char Times[50] = { "\0" }, buff[15] = { "\0" };
+	_itoa_s(hour_, buff, 10);
+	strcat_s(Times, buff);
+	strcat_s(Times, ":");
+	_itoa_s(minute_, buff, 10);
+	strcat_s(Times, buff);
+	strcat_s(Times, ":");
+	_itoa_s(second_, buff, 10);
+	strcat_s(Times, buff);
+	cout << Times << endl;
+	return 0;
+}
+
+void Time::initTime(char* stime)
+{
+	hour_ = atoi(stime);
+	stime[0] = stime[3];
+	stime[1] = stime[4];
+	minute_ = atoi(stime);
+	stime[0] = stime[6];
+	stime[1] = stime[7];
+	second_ = atoi(stime);
+}

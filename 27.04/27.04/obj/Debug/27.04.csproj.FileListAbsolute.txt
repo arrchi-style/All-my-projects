@@ -1,0 +1,12 @@
+C:\Users\Dunki\Desktop\27.04\27.04\bin\Debug\27.04.exe.config
+C:\Users\Dunki\Desktop\27.04\27.04\bin\Debug\27.04.exe
+C:\Users\Dunki\Desktop\27.04\27.04\bin\Debug\27.04.pdb
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\27.04.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\_27._04.Form1.resources
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\_27._04.Properties.Resources.resources
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\27.04.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\27.04.exe
+C:\Users\Dunki\Desktop\27.04\27.04\obj\Debug\27.04.pdb
+C:\Users\Dunki\Desktop\Проекти\27.04\27.04\bin\Debug\27.04.exe.config
+C:\Users\Dunki\Desktop\Проекти\27.04\27.04\obj\Debug\27.04.exe
+C:\Users\Dunki\Desktop\Проекти\27.04\27.04\obj\Debug\27.04.pdb

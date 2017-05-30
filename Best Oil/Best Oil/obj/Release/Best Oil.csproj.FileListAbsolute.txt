@@ -1,0 +1,11 @@
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Release\Best Oil.exe.config
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Release\Best Oil.exe
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Release\Best Oil.pdb
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Release\Best_Oil.Form1.resources
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Release\Best_Oil.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Release\Best Oil.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Release\Best Oil.exe
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Release\Best Oil.pdb
+C:\Users\Dunki\Desktop\Проекти\Best Oil\Best Oil\bin\Release\Best Oil.exe.config
+C:\Users\Dunki\Desktop\Проекти\Best Oil\Best Oil\obj\Release\Best Oil.exe
+C:\Users\Dunki\Desktop\Проекти\Best Oil\Best Oil\obj\Release\Best Oil.pdb

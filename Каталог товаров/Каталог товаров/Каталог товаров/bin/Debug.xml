@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Products>
+  <Product>
+    <Name>Артек</Name>
+    <Country>Україна</Country>
+    <Price>7.50</Price>
+  </Product>
+  <Product>
+    <Name>Молоко</Name>
+    <Country>Україна</Country>
+    <Price>10</Price>
+  </Product>
+</Products>

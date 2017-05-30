@@ -1,0 +1,9 @@
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\bin\Release\Calculator W_F.exe.config
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\bin\Release\Calculator W_F.exe
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\bin\Release\Calculator W_F.pdb
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator_W_F.Form1.resources
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator_W_F.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator W_F.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator W_F.exe
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator W_F.pdb
+C:\Users\Dunki\Desktop\Calculator W_F\Calculator W_F\obj\Release\Calculator W_F.csprojResolveAssemblyReference.cache

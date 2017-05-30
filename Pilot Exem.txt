@@ -1,0 +1,204 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+
+namespace PILOT
+{
+    class Program
+    {
+        public delegate void TDelegate(int speed, int hight);
+
+        class Dispatcher
+        {
+            public string Name { set; get; }
+            public int AfWC { set; get; }       //Adjustments for Weather Conditions (корректировку дл€ погодных условий)
+            public int penalty_points { set; get; }
+
+            public Dispatcher(string name, int afwc = 0) { Name = name; AfWC = afwc; }
+            public void Formula(int speed, int hight)
+            {         
+               if (speed > 50)
+                {
+                    Random rand = new Random();
+                    AfWC = rand.Next(-200,200);
+                    AfWC = 7 * speed - AfWC;   
+                    Console.WriteLine(AfWC);
+                }
+               if(speed > 50 & (AfWC - hight) > 300 & (AfWC - hight) < 600)  
+                {
+                    penalty_points += 25;   //≈сли разница в диапазоне от 300 до 600 то пилот получает25 штрафных очков
+                    Console.Write("Height is too small. ");
+                    Console.WriteLine("Penalty_points: " + penalty_points);
+                }
+                if (speed > 50 & (AfWC - hight) > 600 & (AfWC - hight) < 1000)
+                {
+                    penalty_points += 50;
+                    Console.Write("Height is too small. ");
+                    Console.WriteLine("Penalty_points: " + penalty_points);
+                }
+                if(speed > 50 & (AfWC - hight) > 1000)
+                {
+                    
+                    System.ArgumentException argEx = new ArgumentException("Height is too small.", "Plane is crashed ");
+                    throw argEx;
+                }
+                if (speed > 50 & (hight - AfWC) > 300 & (hight - AfWC) < 600)
+                {
+                    penalty_points += 25;   
+                    Console.Write("It's too high. ");
+                    Console.WriteLine("Penalty_points: " + penalty_points);
+                }
+                if (speed > 50 & (hight - AfWC) > 600 & (hight - AfWC) < 1000)
+                {
+                    penalty_points += 50;
+                    Console.Write("It's too high. ");
+                    Console.WriteLine("Penalty_points: " + penalty_points);
+                }
+            }      
+
+           
+        }
+        class Plane
+        {
+            private List<Dispatcher> disp;
+            private List<TDelegate> deleg;
+            public int Speed { set; get; }
+            public int Hight { set; get; }
+            
+            public Plane(string f1d, string s2d)
+            {
+               disp = new List<Dispatcher>();
+               deleg = new List<TDelegate>();
+
+                disp.Add(new Dispatcher(f1d));
+                disp.Add(new Dispatcher(s2d));
+                deleg.Add(new TDelegate(this.disp[0].Formula));
+                deleg.Add(new TDelegate(this.disp[1].Formula));
+            }
+            public void Add_Dispatcher(string disp)
+            {
+                this.disp.Add(new Dispatcher(disp));
+                this.deleg.Add(new TDelegate(this.disp[this.disp.Count - 1].Formula));     //створенн€ колекц≥њ делегат≥в
+            }
+
+            public void Button(ConsoleKeyInfo cki)
+            {
+                string str = "";
+                string ctrl = "";
+                //-----------------------------------
+                if ((cki.Modifiers & ConsoleModifiers.Control) != 0)   { ctrl = "ctrl"; }
+                    if ((cki.Modifiers & ConsoleModifiers.Shift) != 0) { str = "SHIFT+"; }
+                //------------------------------------
+                if (ctrl + cki.Key.ToString() == ctrl + "T")
+                {
+                    Console.Clear();
+                    Console.Write("Name -> ");
+                    Add_Dispatcher(Console.ReadLine());
+                    goto End;
+                }
+                if (ctrl + cki.Key.ToString() == ctrl + "I")
+                {
+                    Console.Clear();
+                    int penalty = 0;
+                    foreach(var v in disp)
+                    {
+                       penalty =+ v.penalty_points; 
+                    }
+                    Console.WriteLine("Penalty: " + penalty);
+                    Thread.Sleep(3000);
+                    goto End;
+                }
+                //------------------------------------
+                if (str + cki.Key.ToString() == "UpArrow")
+                {
+                    Hight += 250;                  
+                }
+                else if (str + cki.Key.ToString() == "DownArrow")
+                {
+                    Hight -= 250;
+                }
+                else if (str + cki.Key.ToString() == "LeftArrow")
+                {
+                    Speed -= 50;
+                }
+                else if (str + cki.Key.ToString() == "RightArrow")
+                {
+                    Speed += 50;
+                }
+                //------------------------------------
+                else if (str + cki.Key.ToString() == str + "UpArrow")
+                {
+                    Hight += 500;
+                }
+                else if (str + cki.Key.ToString() == str + "DownArrow")
+                {
+                    Hight -= 500;
+                }
+                else if (str + cki.Key.ToString() == str + "LeftArrow")
+                {
+                    Speed -= 150;
+                }
+                else if (str + cki.Key.ToString() == str + "RightArrow")
+                {
+                    Speed += 150;
+                }
+                Console.Clear();
+                Console.WriteLine("Speed -> " + Speed);
+                Console.WriteLine("Hight - > " + Hight);
+
+                int cnt = 0;
+                foreach(var v in deleg)
+                {
+                    Console.Write("\n" + disp[cnt].Name + "-> ");  cnt++;                  
+                    v(Speed, Hight);        //передача даних кожному диспечеру  !!! проблема при генеруванн≥ випадкових чисел 
+                }
+                End:;
+            }
+            public void Inf_of_game()
+            {
+                Console.WriteLine();
+                   Console.WriteLine(" -----------------------------------------------------");
+                   Console.WriteLine("| Right: +50 км/ч, Left: Ц50 км/ч,                    |"); 
+                   Console.WriteLine("| Shift-Right: +150 км/ч,Shift - Left: Ц150 км / ч    |");
+                   Console.WriteLine("| Up: +250 м, Down: Ц250 м,                           |");
+                   Console.WriteLine("| Shift -Up: +500 м, Shift-Down: Ц500 м.              |");
+                   Console.WriteLine("| Add Dispatcher: Ctrl + t                            |");
+                   Console.WriteLine(" ------------------------------------------------------");
+                Console.WriteLine();
+            }
+            public void INF(TDelegate d)
+            {
+                d(Speed, Hight); 
+            }
+        }
+        static void Main(string[] args)
+        {         
+            Console.WriteLine("Input Dispatchers");
+             Console.Write("First -> ");     string d1 = Console.ReadLine();
+             Console.Write("Second -> ");    string d2 = Console.ReadLine();     Console.Clear();
+
+
+
+             Console.TreatControlCAsInput = true;     //дл€ комб≥нац≥њ з Shift
+             Plane plane = new Plane(d1,d2);          //в параметрах ≥мена диспечер≥в
+             ConsoleKeyInfo cki;
+
+             do  {
+                  plane.Inf_of_game();
+                  cki = Console.ReadKey();
+                  plane.Button(cki);
+                 }
+             while (cki.Key != ConsoleKey.Escape);
+
+
+        }
+       
+    }
+
+}
+
+

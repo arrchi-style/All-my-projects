@@ -1,0 +1,100 @@
+﻿<Window x:Class="Management_style_and_Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Management_style_and_Resources"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Dictionary1.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary> 
+        
+        
+        
+        
+    </Window.Resources>
+
+
+    <StackPanel>
+        <Button x:Name="MyButton"
+                            Template="{StaticResource ResourceKey=ButtonTemplate}" Margin="0,0,469,0" RenderTransformOrigin="1.045,1.275" Click="MyButton_Click" Height="45"/>
+        <Button Height="43" Margin="0,0,469,0"/>
+        <Button Height="46" Margin="0,0,469,0"/>
+        <Button Background="Green" Height="45" Margin="0,0,469,0"/>
+    </StackPanel>
+
+
+
+
+
+    <!--<Canvas>
+        <StackPanel Name="StackPanel1"
+                    HorizontalAlignment="Left">
+            <StackPanel.Resources>
+                <LinearGradientBrush x:Key="GradientBrushButton" StartPoint="0,0"
+                                         EndPoint="1,0">
+                    <GradientStop Color="HotPink"
+                                      Offset="0.0"/>
+                    <GradientStop Color="BurlyWood"
+                                      Offset="0.5"/>
+                </LinearGradientBrush>   шаблон для кнопки
+                
+                <Style TargetType="Label">      цей стиль позамовчуваню для всіх лейблів
+                    <Setter Property="FontFamily"      
+                            Value="Times New Roman"/>
+                    <Setter Property="FontStyle"
+                            Value="Italic"/>
+                </Style>
+
+                <Style TargetType="Label"        
+                       x:Key="LabelStyle">
+                    якщо хочемо ще стиль для лейблів описуємо його тут
+                    <Setter Property="FontFamily"
+                            Value="Bold"/>
+                    <Setter Property="FontFamily"
+                            Value="Comic San MS"/>
+                </Style>
+
+                <Style TargetType="Label"
+                       x:Key="AnotherLabelStyle"
+                       BasedOn="{StaticResource LabelStyle}">   наслідування стилю
+                     + можна ще щось додати
+                </Style>
+                
+            </StackPanel.Resources>
+           
+            
+            
+            
+            <Label Height="28" Width="170">
+                Надпись до кнопки 1
+            </Label>
+            <Button Background="{DynamicResource GradientBrushButton}" Height="23" Width="56">
+                Кнопка1   Background для того щоб використати настройки для кнопки які ми створили вище 
+            </Button>
+
+            
+            <Label Height="28" Width="170">
+                Надпись до кнопки2
+            </Label>
+            <Button Background="{StaticResource GradientBrushButton}" Height="23" Width="54">
+                Кнопка2               
+            </Button>
+
+            
+            
+            <Label Height="28" Width="170">
+                Надпись до кнопки3
+            </Label>
+            <Button  Background="{StaticResource GradientBrushButton}" Height="23" Width="54">
+                Кнопка3              
+            </Button>
+        </StackPanel>
+
+    </Canvas>-->
+</Window>

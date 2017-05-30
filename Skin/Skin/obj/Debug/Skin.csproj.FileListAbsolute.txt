@@ -1,0 +1,32 @@
+C:\Users\S26-V2\Desktop\Skin\Skin\bin\Debug\Skin.exe.config
+C:\Users\S26-V2\Desktop\Skin\Skin\bin\Debug\Skin.exe
+C:\Users\S26-V2\Desktop\Skin\Skin\bin\Debug\Skin.pdb
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.csprojResolveAssemblyReference.cache
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\MainWindow.g.cs
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\App.g.cs
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin_MarkupCompile.cache
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin_MarkupCompile.lref
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Dictionary1.baml
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\MainWindow.baml
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.g.resources
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.Properties.Resources.resources
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.csproj.GenerateResource.Cache
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.exe
+C:\Users\S26-V2\Desktop\Skin\Skin\obj\Debug\Skin.pdb
+C:\Users\Dunki\Desktop\Skin\Skin\bin\Debug\Skin.exe.config
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.exe
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.pdb
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\MainWindow.g.cs
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\App.g.cs
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin_MarkupCompile.cache
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin_MarkupCompile.lref
+C:\Users\Dunki\Desktop\Skin\Skin\bin\Debug\Skin.exe
+C:\Users\Dunki\Desktop\Skin\Skin\bin\Debug\Skin.pdb
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\DefaultSkin.baml
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\MainWindow.baml
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin 1.baml
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin 2.baml
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.g.resources
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Skin\Skin\obj\Debug\Skin.csprojResolveAssemblyReference.cache

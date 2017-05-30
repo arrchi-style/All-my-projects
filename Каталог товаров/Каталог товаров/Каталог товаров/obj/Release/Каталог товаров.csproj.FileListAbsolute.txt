@@ -1,0 +1,9 @@
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\bin\Release\Каталог товаров.exe.config
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\bin\Release\Каталог товаров.exe
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\bin\Release\Каталог товаров.pdb
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог_товаров.Form1.resources
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог_товаров.Form_Add_Product.resources
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог_товаров.Properties.Resources.resources
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог товаров.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог товаров.exe
+C:\Users\Dunki\Desktop\ДЗ\Каталог товаров\Каталог товаров\obj\Release\Каталог товаров.pdb

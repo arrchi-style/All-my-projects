@@ -1,0 +1,8 @@
+C:\Users\Dunki\Desktop\24.04\24.04\bin\Release\24.04.exe.config
+C:\Users\Dunki\Desktop\24.04\24.04\bin\Release\24.04.exe
+C:\Users\Dunki\Desktop\24.04\24.04\bin\Release\24.04.pdb
+C:\Users\Dunki\Desktop\24.04\24.04\obj\Release\_24._04.Form1.resources
+C:\Users\Dunki\Desktop\24.04\24.04\obj\Release\_24._04.Properties.Resources.resources
+C:\Users\Dunki\Desktop\24.04\24.04\obj\Release\24.04.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\24.04\24.04\obj\Release\24.04.exe
+C:\Users\Dunki\Desktop\24.04\24.04\obj\Release\24.04.pdb

@@ -1,0 +1,33 @@
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe.config
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\bin\Debug\Завдання 2.pdb
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form2.resources
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Properties.Resources.resources
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csproj.GenerateResource.Cache
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання 2.exe
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання 2.pdb
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form1.resources
+C:\Users\S26-V2\Desktop\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe.config
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.pdb
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form1.resources
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form2.resources
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Properties.Resources.resources
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csproj.GenerateResource.Cache
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.exe
+C:\Users\Dunki\Downloads\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.pdb
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe.config
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.exe
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.pdb
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.pdb
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form1.resources
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Form2.resources
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання_2.Properties.Resources.resources
+C:\Users\Dunki\Desktop\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Проекти\04.05\Завдання 2\Завдання 2\bin\Debug\Завдання 2.exe.config
+C:\Users\Dunki\Desktop\Проекти\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.exe
+C:\Users\Dunki\Desktop\Проекти\04.05\Завдання 2\Завдання 2\obj\Debug\Завдання 2.pdb

@@ -1,0 +1,30 @@
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\bin\Debug\List_Box.exe.config
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\bin\Debug\List_Box.exe
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\bin\Debug\List_Box.pdb
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.csprojResolveAssemblyReference.cache
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.Form1.resources
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.Properties.Resources.resources
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.csproj.GenerateResource.Cache
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.exe
+c:\users\s26-v2\documents\visual studio 2015\Projects\List_Box\List_Box\obj\Debug\List_Box.pdb
+C:\Users\S26-V2\Desktop\List_Box\List_Box\bin\Debug\List_Box.exe.config
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.exe
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.pdb
+C:\Users\S26-V2\Desktop\List_Box\List_Box\bin\Debug\List_Box.exe
+C:\Users\S26-V2\Desktop\List_Box\List_Box\bin\Debug\List_Box.pdb
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.csprojResolveAssemblyReference.cache
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.Form1.resources
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.Properties.Resources.resources
+C:\Users\S26-V2\Desktop\List_Box\List_Box\obj\Debug\List_Box.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\List_Box\List_Box\bin\Debug\List_Box.exe.config
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.exe
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.pdb
+C:\Users\Dunki\Desktop\List_Box\List_Box\bin\Debug\List_Box.exe
+C:\Users\Dunki\Desktop\List_Box\List_Box\bin\Debug\List_Box.pdb
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.Form1.resources
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.Properties.Resources.resources
+C:\Users\Dunki\Desktop\List_Box\List_Box\obj\Debug\List_Box.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\bin\Debug\List_Box.exe.config
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Debug\List_Box.exe
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Debug\List_Box.pdb

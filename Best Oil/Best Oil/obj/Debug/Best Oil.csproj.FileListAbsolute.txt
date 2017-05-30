@@ -1,0 +1,18 @@
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.exe.config
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.exe
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.pdb
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best_Oil.Form1.resources
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best_Oil.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.exe
+C:\Users\Dunki\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.pdb
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.exe.config
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.exe
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.pdb
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.csprojResolveAssemblyReference.cache
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best_Oil.Form1.resources
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best_Oil.Properties.Resources.resources
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\obj\Debug\Best Oil.csproj.GenerateResource.Cache
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.exe
+C:\Users\S26-V2\Desktop\Best Oil\Best Oil\bin\Debug\Best Oil.pdb

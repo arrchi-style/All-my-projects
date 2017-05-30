@@ -1,0 +1,9 @@
+C:\Users\Dunki\Desktop\04.05\Search\Search\bin\Release\Search.exe.config
+C:\Users\Dunki\Desktop\04.05\Search\Search\bin\Release\Search.exe
+C:\Users\Dunki\Desktop\04.05\Search\Search\bin\Release\Search.pdb
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.Form1.resources
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.Form2.resources
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.Properties.Resources.resources
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.exe
+C:\Users\Dunki\Desktop\04.05\Search\Search\obj\Release\Search.pdb

@@ -1,0 +1,16 @@
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\bin\Release\W_F Check box.exe.config
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\bin\Release\W_F Check box.exe
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\bin\Release\W_F Check box.pdb
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\obj\Release\W_F_Check_box.Form1.resources
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\obj\Release\W_F_Check_box.Properties.Resources.resources
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\obj\Release\W_F Check box.csproj.GenerateResource.Cache
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\obj\Release\W_F Check box.exe
+C:\Users\S26-V2\Desktop\W_F Check box\W_F Check box\obj\Release\W_F Check box.pdb
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\bin\Release\W_F Check box.exe.config
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\obj\Release\W_F Check box.exe
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\obj\Release\W_F Check box.pdb
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\bin\Release\W_F Check box.exe
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\bin\Release\W_F Check box.pdb
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\obj\Release\W_F_Check_box.Form1.resources
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\obj\Release\W_F_Check_box.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Проекти\W_F\W_F Check box\obj\Release\W_F Check box.csproj.GenerateResource.Cache

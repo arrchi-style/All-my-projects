@@ -1,0 +1,9 @@
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\bin\Release\List_Box.exe.config
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\bin\Release\List_Box.exe
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\bin\Release\List_Box.pdb
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.csprojResolveAssemblyReference.cache
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.Form1.resources
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.Properties.Resources.resources
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.csproj.GenerateResource.Cache
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.exe
+C:\Users\Dunki\Desktop\Проекти\List_Box\List_Box\obj\Release\List_Box.pdb

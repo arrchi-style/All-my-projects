@@ -1,0 +1,7 @@
+﻿  Drib.cpp
+c:\users\dunki\desktop\проекти\28.11.16.2\28.11.16\28.11.16\drib.cpp(75): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  main.cpp
+  28.11.16.vcxproj -> C:\Users\Dunki\Desktop\Проекти\28.11.16.2\28.11.16\Debug\28.11.16.exe
+  28.11.16.vcxproj -> C:\Users\Dunki\Desktop\Проекти\28.11.16.2\28.11.16\Debug\28.11.16.pdb (Partial PDB)

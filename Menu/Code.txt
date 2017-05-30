@@ -1,0 +1,277 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Menu
+{
+    public partial class Task2 : Form
+    {
+        MenuStrip menu;
+        string buffer;
+        
+        ToolStripMenuItem color;
+        ToolStripMenuItem format;
+        int Back_font = 0;
+
+        public Task2()
+        {          
+            menu = new MenuStrip();
+            
+            ToolStripMenuItem file = new ToolStripMenuItem("File");
+
+            ToolStripMenuItem open = (ToolStripMenuItem)file.DropDownItems.Add("open");
+            open.Click += Open_Click;
+            open.ShortcutKeys = Keys.Control | Keys.O;
+            open.ShowShortcutKeys = true;
+
+            ToolStripMenuItem save = (ToolStripMenuItem)file.DropDownItems.Add("save");
+            save.Click += Save_Click;
+            save.ShortcutKeys = Keys.Control | Keys.S;
+            save.ShowShortcutKeys = true;
+
+            ToolStripMenuItem new1 = (ToolStripMenuItem)file.DropDownItems.Add("new");              //створення силки на кнопку new
+            new1.Click += New1_Click;                                                               //ств. обробника на клік кнопки new1
+            new1.ShortcutKeys = Keys.Control | Keys.N;
+            new1.ShowShortcutKeys = true;
+
+            ToolStripMenuItem close = (ToolStripMenuItem)file.DropDownItems.Add("close");
+            close.Click += Close_Click;
+            menu.Items.Add(file);
+            //--------------------------------------------------------------------------
+            ToolStripMenuItem edit = new ToolStripMenuItem("Edit");
+
+
+            ToolStripMenuItem copy = (ToolStripMenuItem)edit.DropDownItems.Add("copy");
+            copy.Click += Copy_Click;
+            copy.ShortcutKeys = Keys.Control | Keys.C;                                               //задаємо скорочення для cut
+            copy.ShowShortcutKeys = true;                                                            //обовязково його активуєм
+
+
+            ToolStripMenuItem cut = (ToolStripMenuItem)edit.DropDownItems.Add("cut");
+            cut.Click += Cut_Click;
+            cut.ShortcutKeys = Keys.Control | Keys.X;
+            cut.ShowShortcutKeys = true;
+
+            ToolStripMenuItem paste = (ToolStripMenuItem)edit.DropDownItems.Add("paste");
+            paste.Click += Paste_Click;
+            paste.ShortcutKeys = Keys.Control | Keys.V;                                               //задаємо скорочення для cut
+            paste.ShowShortcutKeys = true;
+
+            ToolStripMenuItem selected = (ToolStripMenuItem)edit.DropDownItems.Add("select");
+            selected.Click += Selected_Click;
+            selected.ShortcutKeys = Keys.Control | Keys.A;                                               //задаємо скорочення для cut
+            selected.ShowShortcutKeys = true;
+
+            ToolStripMenuItem cancel = (ToolStripMenuItem)edit.DropDownItems.Add("cancel");
+            cancel.Click += Cancel_Click;
+            cancel.ShortcutKeys = Keys.Control | Keys.B;                                             //задаємо скорочення для cut
+            cancel.ShowShortcutKeys = true;
+
+            menu.Items.Add(edit);                                                                   //edit -> in menu                   
+
+            format = new ToolStripMenuItem("Format");
+            ToolStripMenuItem font = (ToolStripMenuItem)format.DropDownItems.Add("Font...");
+            font.ShortcutKeys = Keys.Control | Keys.Shift | Keys.F;
+            font.ShowShortcutKeys = true;
+            font.Click += Font_Click;
+            menu.Items.Add(format);
+
+
+            color = (ToolStripMenuItem)format.DropDownItems.Add("color");
+            ToolStripMenuItem text_color = (ToolStripMenuItem)color.DropDownItems.Add("Text color");
+            text_color.Click += Text_color_Click;
+
+            ToolStripMenuItem back_color = (ToolStripMenuItem)color.DropDownItems.Add("Back color");
+            back_color.Click += Back_color_Click;
+          
+            Controls.Add(menu);
+
+            this.Text = "Artyr";
+
+            InitializeComponent();
+           
+        }
+
+        private void Text_color_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = false;
+            // Allows the user to get help. (The default is false.)
+            MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = richTextBox1.ForeColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+                if (richTextBox1.SelectedText == "")
+
+                {
+                    richTextBox1.ForeColor = MyDialog.Color;
+                }
+                else
+                {
+                    richTextBox1.SelectionColor = MyDialog.Color;
+                }
+        }
+
+        private void Back_color_Click(object sender, EventArgs e)
+        {
+            ColorDialog MyDialog = new ColorDialog();
+            // Keeps the user from selecting a custom color.
+            MyDialog.AllowFullOpen = false;
+            // Allows the user to get help. (The default is false.)
+            MyDialog.ShowHelp = true;
+            // Sets the initial color select to the current text color.
+            MyDialog.Color = richTextBox1.ForeColor;
+
+            // Update the text box color if the user clicks OK 
+            if (MyDialog.ShowDialog() == DialogResult.OK)
+                richTextBox1.BackColor = MyDialog.Color;
+        }
+
+        private void Font_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowColor = true;
+
+            fontDialog1.Font = richTextBox1.Font;
+            fontDialog1.Color = richTextBox1.ForeColor;
+
+            if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                if (richTextBox1.SelectedText == "")
+                {
+                    richTextBox1.Font = fontDialog1.Font;
+                    richTextBox1.ForeColor = fontDialog1.Color;
+                }
+                 else
+                {
+                    richTextBox1.SelectionFont = fontDialog1.Font;
+                    richTextBox1.SelectionColor = fontDialog1.Color;
+                }  
+            }
+        }
+
+        private void Selected_Click(object sender, EventArgs e)
+        {
+            richTextBox1.ForeColor = Color.Blue;
+            buffer = richTextBox1.Text;
+        }
+
+        
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            buffer = "";
+        }
+
+        private void Paste_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = richTextBox1.Text.Insert(richTextBox1.SelectionStart, buffer);
+        }
+
+        private void Cut_Click(object sender, EventArgs e)
+        {
+            this.buffer = richTextBox1.SelectedText;
+            richTextBox1.SelectedText = "";
+        }
+
+        private void Copy_Click(object sender, EventArgs e)
+        {
+            this.buffer = richTextBox1.SelectedText;
+        }
+
+
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text != "")
+            {
+                if (DialogResult.Yes == MessageBox.Show("Зберегти", "Save", MessageBoxButtons.YesNo))
+                {
+                    this.Save_Click(sender, e);
+                    this.Close();
+                }
+            }
+            else
+            {
+                this.Close();
+            }
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+                saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+
+                saveFileDialog1.ShowDialog();
+
+                StreamWriter write = new StreamWriter(saveFileDialog1.FileName);
+                write.Write(richTextBox1.Text);
+
+                write.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Не збережено");
+            }
+
+        }
+
+        private void Open_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            openFileDialog1.InitialDirectory = Environment.CurrentDirectory;
+            openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog1.ShowDialog();
+
+
+            StreamReader reader = new StreamReader(openFileDialog1.FileName);
+
+            richTextBox1.Text += reader.ReadToEnd();
+            this.Text = openFileDialog1.FileName;
+
+            reader.Close();
+        }
+
+        private void New1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("new");
+        }
+
+        private void closeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("contexMenu close");
+        }
+       
+        private void Task2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (richTextBox1.Text != "")
+            {
+                if (DialogResult.Yes == MessageBox.Show("Зберегти", "Save", MessageBoxButtons.YesNo))
+                {
+                    this.Save_Click(sender, e);
+                }
+            }
+        }
+
+        private void Task2_SizeChanged(object sender, EventArgs e)
+        {          
+            this.richTextBox1.AutoSize = false;
+            this.richTextBox1.Size = new System.Drawing.Size(this.Size.Width - 25, this.Size.Height - 100);
+        }       
+
+    }
+}

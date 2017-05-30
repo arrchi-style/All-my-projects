@@ -1,0 +1,279 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Каталог_товаров
+{
+    public partial class Form1 : Form
+    {
+        Form_Add_Product add_pr;
+        List<Product> product = new List<Product>();
+
+        public Form1()
+        {
+            InitializeComponent();
+            this.Text = "Каталог товаров";
+        }
+
+        private void button_add_Click(object sender, EventArgs e)
+        {
+            add_pr = new Form_Add_Product();
+            if (add_pr.ShowDialog() == DialogResult.OK)
+            {
+                listBox1.Items.Add(add_pr.return_Product.ToString());
+                product.Add(add_pr.return_Product);
+            }
+
+        }
+
+        private void button_change_product_Click(object sender, EventArgs e)
+        {
+            add_pr = new Form_Add_Product("Редагування товару");
+            try
+            {
+                this.Text = listBox1.SelectedItem.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Ви не вибрали який товар редагувати");
+                goto end;
+            }
+            //----------------------------------------------перевірка чи вибрали товар для редагування
+            try
+            {
+                foreach (string item in listBox1.Items)
+                {
+                    string removelistitem = listBox1.SelectedItem.ToString();
+                    if (item.Contains(removelistitem))
+                    {
+                        listBox1.Items.Remove(item);
+                        product.RemoveAt(listBox1.SelectedIndex);
+                    }
+                }
+            }
+            catch
+            {
+                if (add_pr.ShowDialog() == DialogResult.OK)
+                {
+                    listBox1.Items.Add(add_pr.return_Product.ToString());
+                }
+            }
+            end:;
+        }
+
+        private void button_delete_product_Click(object sender, EventArgs e)
+        {
+            add_pr = new Form_Add_Product("Редагування товару");
+            try
+            {
+                this.Text = listBox1.SelectedItem.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("Ви не вибрали який товар видаляти");
+                goto end;
+            }
+            //---------------------------------------------------------
+            try
+            {
+                foreach (string item in listBox1.Items)
+                {
+                    string removelistitem = listBox1.SelectedItem.ToString();
+                    if (item.Contains(removelistitem))
+                    {
+                        listBox1.Items.Remove(item);                //видалення елементу з ліст боксу
+                        product.RemoveAt(listBox1.SelectedIndex);   //видалення елементу з колекції
+                    }
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Товар видалено");
+            }
+            end:;
+        }
+
+        private void button_clear_list_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            product.Clear();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (MessageBox.Show("Зберегти?", "Exit", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                foreach(var v in product)
+                {
+                    v.XML(Environment.CurrentDirectory);
+                }
+                MessageBox.Show(Environment.CurrentDirectory);
+                Application.Exit();
+            }
+            
+        }
+    } 
+}
+
+//----------------------------------------------------------------------Форма 1
+
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Каталог_товаров
+{
+    public partial class Form_Add_Product : Form
+    {
+        Product product = new Product();
+
+        public Form_Add_Product()
+        {
+            InitializeComponent();
+            this.Text = "Додавання товару";
+        }
+
+        public Form_Add_Product(string str)
+        {
+            InitializeComponent();
+            this.Text = str;
+        }
+
+        private void Ok_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "" | textBox2.Text == "" | textBox3.Text == "")
+            {
+                MessageBox.Show("Не всі поля заповненні");
+            }
+            else
+            {
+                product.Name = textBox1.Text;
+                product.Country_of_made = textBox2.Text;
+                product.Price = textBox3.Text;
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+
+        }
+
+        public Product return_Product
+        {
+            get { return product; }
+        }
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+        }
+
+
+    }
+
+
+}
+//---------------------------------------------------------------Форма 2 
+
+
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
+
+namespace Каталог_товаров
+{
+    public class Product
+    {
+        public string Name { set; get; }
+        public string Country_of_made { set; get; }
+        public string Price { set; get; }
+
+        public override string ToString()
+        {
+            return "Назва: " + Name + "\\  Країна виробника: " + Country_of_made + "\\   Ціна: " + Price;
+        }
+
+        public void XML(string str, string name_of_file = ".xml")
+        {
+
+            if (File.Exists(str + name_of_file))     //перевірка чи елемент файл існує 
+            {
+                XmlDocument doc = new XmlDocument();
+
+                doc.Load(str + name_of_file);        //загружаємо все дерево
+                XmlNode root = doc.DocumentElement;  //кореневий елемент
+
+                XmlNode xProduct = doc.CreateElement(string.Empty, "Product", string.Empty);  //створення person
+                root.AppendChild(xProduct);           
+
+                XmlNode xName = doc.CreateElement(string.Empty, "Name", string.Empty);
+                XmlNode x_t_Name = doc.CreateTextNode(this.Name);
+                xName.AppendChild(x_t_Name);
+                xProduct.AppendChild(xName);
+
+                XmlNode xCountry = doc.CreateElement(string.Empty, "Country", string.Empty);
+                XmlNode x_t_Country = doc.CreateTextNode(this.Country_of_made);
+                xCountry.AppendChild(x_t_Country);
+                xProduct.AppendChild(xCountry);            
+
+                XmlNode xPrice = doc.CreateElement(string.Empty, "Price", string.Empty);
+                XmlNode x_t_Product = doc.CreateTextNode(this.Price);
+                xPrice.AppendChild(x_t_Product);
+                xProduct.AppendChild(xPrice);
+
+                doc.Save(str + name_of_file);
+            }
+
+            else
+            {
+                //(1) xml declaration
+                XmlDocument doc = new XmlDocument();
+                XmlDeclaration xmlDeclaration = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+                XmlElement root = doc.DocumentElement;
+                doc.InsertBefore(xmlDeclaration, root);         //Метод Node.insertBefore() добавляет элемент в  список дочерних элементов родителя перед указанным элементом.
+
+                //(2) string.Empty makes cleaner code
+                XmlElement xProducts = doc.CreateElement(string.Empty, "Products", string.Empty);
+                doc.AppendChild(xProducts);
+
+                XmlElement xProduct = doc.CreateElement(string.Empty, "Product", string.Empty);
+                xProducts.AppendChild(xProduct);
+
+                XmlElement xName = doc.CreateElement(string.Empty, "Name", string.Empty);
+                XmlText x_t_Name = doc.CreateTextNode(this.Name);
+                xName.AppendChild(x_t_Name);  //текстовий ел. є доч. XmlElement
+                xProduct.AppendChild(xName);        //XmlElement є доч. Persony
+
+                XmlElement xCountry = doc.CreateElement(string.Empty, "Country", string.Empty);
+                XmlText x_t_Country = doc.CreateTextNode(this.Country_of_made);
+                xCountry.AppendChild(x_t_Country);
+                xProduct.AppendChild(xCountry);
+
+                XmlElement xPrice = doc.CreateElement(string.Empty, "Price", string.Empty);
+                XmlText x_t_Price = doc.CreateTextNode(this.Price);
+                xPrice.AppendChild(x_t_Price);
+                xProduct.AppendChild(xPrice);
+
+               
+                doc.Save(str + name_of_file);
+            }
+        }
+
+    }
+}
+//--------------------------------------------------------------мій клас
